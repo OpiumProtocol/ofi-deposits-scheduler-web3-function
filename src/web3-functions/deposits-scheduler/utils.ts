@@ -54,6 +54,7 @@ export async function checkIsStakingPhase(pool: string, context: Web3FunctionCon
     // derivative maturity - EPOCH + TIME_DELTA < now < derivative maturity - EPOCH + STAKING_PHASE - TIME_DELTA
     isStakingPhase = (endTime - epochLength + deltaLength < now) && (now < endTime - epochLength + stakingLength - deltaLength)
   } catch (e) {
+    console.error(e)
     return false
   }
   
