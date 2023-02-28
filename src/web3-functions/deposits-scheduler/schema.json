@@ -4,7 +4,8 @@
   "memory": 128,
   "timeout": 30,
   "userArgs": {
-    "currency": "string",
-    "oracle": "string"
+    "schedulerType": "string",
+    "subgraphName": "string",
+    "schedulerAddress": "string"
   }
 }
